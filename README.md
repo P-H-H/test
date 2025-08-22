@@ -102,20 +102,39 @@ To run both backend and frontend concurrently:
 npm run dev
 ```
 
-## Usage
+## Quick Start
 
-### First Time Setup
+### 1. Install Dependencies
+```bash
+npm install
+cd client && npm install --legacy-peer-deps && cd ..
+```
 
-1. Start the application
-2. Register the first user account (automatically becomes owner)
-3. Create your first store
-4. Add employees and assign them to stores
-5. Set up your product catalog
-6. Start managing your stores!
+### 2. Environment Setup
+Create a `.env` file in the root directory:
+```env
+NODE_ENV=development
+PORT=5000
+MONGODB_URI=mongodb://localhost:27017/multistoremanager
+JWT_SECRET=your_super_secret_jwt_key_here_change_this_in_production
+JWT_EXPIRE=30d
+```
+
+### 3. Initialize Database
+```bash
+npm run setup
+```
+
+### 4. Start Application
+```bash
+npm run dev
+```
+
+Visit http://localhost:3000 to access the application.
 
 ### Demo Accounts
 
-For demonstration purposes, you can use these credentials:
+The setup script creates these demo accounts:
 
 **Owner Account:**
 - Email: owner@demo.com
@@ -124,6 +143,12 @@ For demonstration purposes, you can use these credentials:
 **Employee Account:**
 - Email: employee@demo.com
 - Password: password123
+
+### Sample Data Included
+
+- 2 sample stores (Downtown Mini Market, Uptown Express)
+- 5 sample products with inventory
+- 1 employee assigned to both stores
 
 ## API Endpoints
 
