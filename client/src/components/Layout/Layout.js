@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../contexts/AuthContext';
+import NotificationPanel from './NotificationPanel';
 import { 
   Store, 
   Users, 
@@ -167,7 +168,8 @@ const Layout = ({ children }) => {
                 Multi-Store Manager
               </h1>
             </div>
-            <div className="ml-4 flex items-center md:ml-6">
+            <div className="ml-4 flex items-center space-x-4 md:ml-6">
+              <NotificationPanel />
               <button
                 onClick={handleLogout}
                 className="bg-white p-1 rounded-full text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
