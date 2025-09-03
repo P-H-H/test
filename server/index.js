@@ -18,6 +18,7 @@ const inventoryRoutes = require('./routes/inventory');
 const salesRoutes = require('./routes/sales');
 const staffRoutes = require('./routes/staff');
 const customerRoutes = require('./routes/customers');
+const supplierRoutes = require('./routes/suppliers');
 const reportRoutes = require('./routes/reports');
 
 // Security middleware
@@ -67,6 +68,7 @@ app.use('/api/inventory', inventoryRoutes);
 app.use('/api/sales', salesRoutes);
 app.use('/api/staff', staffRoutes);
 app.use('/api/customers', customerRoutes);
+app.use('/api/suppliers', supplierRoutes);
 app.use('/api/reports', reportRoutes);
 
 // 404 handler

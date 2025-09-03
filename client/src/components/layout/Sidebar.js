@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-import { X, Store, Package, BarChart3, Users, ShoppingCart, Settings, Home, User, LogOut } from 'lucide-react';
+import { X, Store, Package, BarChart3, Users, ShoppingCart, Settings, Home, User, LogOut, Truck, CreditCard } from 'lucide-react';
 import { useAuth } from '../../context/AuthContext';
 import { cn } from '../../utils/cn';
 
@@ -10,8 +10,10 @@ const navigation = [
   { name: 'Products', href: '/products', icon: Package, permission: 'manage_products' },
   { name: 'Inventory', href: '/inventory', icon: Package, permission: 'manage_inventory' },
   { name: 'Sales', href: '/sales', icon: ShoppingCart, permission: 'manage_sales' },
+  { name: 'POS', href: '/pos', icon: CreditCard, permission: 'manage_sales' },
   { name: 'Staff', href: '/staff', icon: Users, permission: 'manage_staff' },
   { name: 'Customers', href: '/customers', icon: User, permission: 'manage_customers' },
+  { name: 'Suppliers', href: '/suppliers', icon: Truck, permission: 'manage_suppliers' },
   { name: 'Reports', href: '/reports', icon: BarChart3, permission: 'view_reports' },
   { name: 'Settings', href: '/settings', icon: Settings, permission: 'manage_settings' },
 ];

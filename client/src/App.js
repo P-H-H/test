@@ -26,7 +26,9 @@ import InventoryManagement from './pages/inventory/InventoryManagement';
 import SalesManagement from './pages/sales/SalesManagement';
 import StaffManagement from './pages/staff/StaffManagement';
 import CustomerManagement from './pages/customers/CustomerManagement';
+import SupplierManagement from './pages/suppliers/SupplierManagement';
 import Reports from './pages/reports/Reports';
+import POS from './pages/pos/POS';
 import Settings from './pages/Settings';
 import Profile from './pages/Profile';
 
@@ -108,6 +110,12 @@ function App() {
                   
                   {/* Customer management routes */}
                   <Route path="customers" element={<CustomerManagement />} />
+                  
+                  {/* Supplier management routes */}
+                  <Route path="suppliers" element={<SupplierManagement />} />
+                  
+                  {/* POS routes */}
+                  <Route path="pos" element={<POS />} />
                   
                   {/* Reports and analytics routes */}
                   <Route path="reports" element={<Reports />} />
