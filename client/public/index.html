@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1e3a8a" />
+    <meta
+      name="description"
+      content="Myanmar Supermarket Management System - Advanced multi-store management solution designed for Myanmar market conditions"
+    />
+    <meta name="keywords" content="supermarket, management, myanmar, inventory, sales, POS, retail" />
+    <meta name="author" content="Myanmar Supermarket Management System" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourdomain.com/" />
+    <meta property="og:title" content="Myanmar Supermarket Management System" />
+    <meta property="og:description" content="Advanced multi-store management solution designed for Myanmar market conditions" />
+    <meta property="og:image" content="%PUBLIC_URL%/og-image.jpg" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://yourdomain.com/" />
+    <meta property="twitter:title" content="Myanmar Supermarket Management System" />
+    <meta property="twitter:description" content="Advanced multi-store management solution designed for Myanmar market conditions" />
+    <meta property="twitter:image" content="%PUBLIC_URL%/og-image.jpg" />
+    
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <!-- Preconnect to external domains for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style" />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" as="style" />
+    
+    <title>Myanmar Supermarket Management System</title>
+    
+    <!-- Custom CSS for loading state -->
+    <style>
+      #root {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, #eff6ff 0%, #ffffff 50%, #fffbeb 100%);
+      }
+      
+      .loading-spinner {
+        width: 50px;
+        height: 50px;
+        border: 3px solid #e5e7eb;
+        border-top: 3px solid #1e3a8a;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      
+      .loading-text {
+        margin-top: 20px;
+        color: #6b7280;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <div style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #f3f4f6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        padding: 20px;
+      ">
+        <div>
+          <h1 style="color: #1f2937; margin-bottom: 16px;">JavaScript Required</h1>
+          <p style="color: #6b7280; max-width: 400px;">
+            This application requires JavaScript to run. Please enable JavaScript in your browser and refresh the page.
+          </p>
+        </div>
+      </div>
+    </noscript>
+    
+    <div id="root">
+      <!-- Loading state while React app initializes -->
+      <div style="text-align: center;">
+        <div class="loading-spinner"></div>
+        <div class="loading-text">Loading Myanmar Supermarket Management System...</div>
+      </div>
+    </div>
+  </body>
+</html>
